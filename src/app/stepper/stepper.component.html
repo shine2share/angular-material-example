@@ -1,0 +1,22 @@
+<mat-stepper class="step-custom" [orientation]="(stepperOrientation$ | async)!">
+    <mat-step>
+        <ng-template matStepLabel>Choose product</ng-template>
+        <div matStepContent>
+            <app-product></app-product>
+        </div>
+    </mat-step>
+
+    <mat-step>
+        <ng-template matStepLabel>Order detail</ng-template>
+        <div matStepContent>
+            <app-order></app-order>
+        </div>
+    </mat-step>
+
+    <mat-step>
+        <ng-template matStepLabel>Shipping detail</ng-template>
+        <div matStepContent>
+            <app-shipping></app-shipping>
+        </div>
+    </mat-step>
+</mat-stepper>

@@ -1,0 +1,37 @@
+.step-custom {
+    .mat-horizontal-stepper-header-container {
+        max-width: 750px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+
+        .mat-step-header {
+            background-color: #eee;
+            border-radius: 5px;
+            height: 50px;
+
+            &:hover {
+                background-color: #ddd;
+            }
+
+            &[ng-reflect-selected='true'] {
+                background: linear-gradient(180deg, #038dd2 100%, #0479b3 100%);
+
+                .mat-step-icon {
+                    background-color: #fff;
+                    color: #000;
+                }
+
+                .mat-step-label {
+                    color: #fff;
+                }
+            }
+        }
+
+        .mat-stepper-horizontal-line {
+            border-top-style: dashed;
+            border-top-color: rgba(0, 0, 0, 0.3);
+        }
+    }
+
+}

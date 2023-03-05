@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    .menu-item {
+        a {
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(156, 8, 77);
+        }
+    }
+}
